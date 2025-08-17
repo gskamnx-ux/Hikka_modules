@@ -3,6 +3,7 @@ import asyncio
 from telethon import Button
 from telethon.tl import functions, types
 from hikka.modules import hikka_module
+from hikka.tl import get_entity
 
 # Эта строка обязательна для загрузки модуля в Hikka
 __dependencies__ = []
