@@ -2,7 +2,7 @@ import logging
 import asyncio
 from telethon import Button
 from telethon.tl import functions, types
-from hikka.module import Module
+from hikka.modules import hikka_module
 
 # Эта строка обязательна для загрузки модуля в Hikka
 __dependencies__ = []
@@ -20,7 +20,7 @@ STARS_TO_IGNORE = [
 ]
 # -----------------
 
-class StarGiftBuyer(Module): # Обратите внимание, здесь мы наследуемся от импортированного `Module`
+class StarGiftBuyer(hikka_module.Module):
     """
     Автоматически сканирует доступные подарки и покупает те, которых нет в списке исключений.
     """
